@@ -1,12 +1,28 @@
 {
+  "name": "luis-flavio/php-tips001",
+  "description": "API RESTful para sistemas laboratoriais",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [{
+    "name": "Luis Flavio S. C. Pereira",
+    "email": "luis.pereirasiu@gmail.com",
+    "role": "Developer"
+  }],
+  "config": {
+    "vendor-dir": "vendor"
+  },
   "autoload": {
     "psr-4": {
-      "App\\": "App/"
-    }
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Config.php"
+    ]
   },
   "require": {
     "slim/slim": "^4.0",
     "slim/psr7": "^0.6.0",
-    "php-di/slim-bridge": "^3.0"
+    "php-di/slim-bridge": "^3.0",
+    "coffeecode/datalayer": "1.0.*"
   }
 }
